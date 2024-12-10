@@ -1,0 +1,88 @@
+/* Definição geral do corpo */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Tipografia mais moderna */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(135deg, #ffadad, #ffd6a5); /* Gradiente suave para o fundo */
+  overflow: hidden;
+}
+
+/* Estilo do container principal */
+.container {
+  text-align: center;
+  transition: opacity 1s ease;
+}
+
+/* Estilo do título */
+h1 {
+  font-size: 36px; /* Aumentando o tamanho da fonte */
+  margin-bottom: 40px; /* Maior distância entre a pergunta e os botões */
+  color: #8b2a2a; /* Cor mais suave para o título */
+  font-weight: 600; /* Aumentando o peso da fonte para dar destaque */
+}
+
+/* Estilo dos botões */
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px; /* Aumentando a distância entre os botões */
+}
+
+button {
+  background-color: #ff6b6b; /* Cor mais suave para o fundo */
+  color: white;
+  border: none;
+  padding: 25px 50px; /* Aumentando o tamanho dos botões */
+  font-size: 26px; /* Aumentando o tamanho da fonte */
+  font-weight: bold; /* Tornando o texto mais pesado */
+  cursor: pointer;
+  border-radius: 30px; /* Bordas mais arredondadas */
+  transition: transform 0.3s, background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Sombra mais pronunciada */
+}
+
+button:hover {
+  background-color: #ff4f4f; /* Cor do botão mais intensa no hover */
+  transform: scale(1.1); /* Pequeno aumento de tamanho no hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25); /* Sombra mais forte no hover */
+}
+
+button:active {
+  transform: scale(1.05); /* Efeito de clique */
+}
+
+/* Estilo do container da imagem */
+#imageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+#image {
+  max-width: 90%;
+  height: auto;
+  border-radius: 15px; /* Bordas arredondadas na imagem */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Sombra suave na imagem */
+  transition: transform 0.5s ease;
+}
+
+#imageContainer img {
+  transform: scale(0.9); /* Começando com a imagem um pouco menor */
+}
+
+#imageContainer img:hover {
+  transform: scale(1.05); /* Imagem cresce um pouco quando o mouse passa por cima */
+}
