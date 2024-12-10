@@ -8,7 +8,7 @@
     <style>
         /* Estilos diretamente no HTML */
         body {
-            background: linear-gradient(135deg, #ffadad, #ffd6a5); /* Gradiente de fundo */
+            background: linear-gradient(135deg, #2c003e, #3d004d); /* Fundo roxo quase preto */
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
             margin: 0;
             padding: 0;
@@ -24,7 +24,7 @@
         }
 
         h1 {
-            color: #8b2a2a; /* Cor do título */
+            color: #ffffff; /* Título em branco para destacar mais no fundo escuro */
             margin-bottom: 20px;
         }
 
@@ -35,16 +35,21 @@
         }
 
         button {
-            background-color: #ff6b6b; /* Cor do botão */
+            background-color: #9c27b0; /* Cor dos botões em roxo vibrante */
             border: none;
             padding: 15px 30px;
             font-size: 16px;
             cursor: pointer;
             border-radius: 5px;
+            color: white; /* Texto branco nos botões */
         }
 
         button:hover {
-            background-color: #ff4c4c; /* Cor do botão ao passar o mouse */
+            background-color: #8e24aa; /* Cor do botão ao passar o mouse em tom mais escuro de roxo */
+        }
+
+        #imageContainer .container h1 {
+            color: #9b59b6; /* Cor roxa mais clara para o segundo texto */
         }
     </style>
 </head>
@@ -59,14 +64,11 @@
 
     <div id="imageContainer" style="display:none; position: relative;">
         <div class="container" id="mainContainer" style="position: absolute; top: -130px; left: -200px; font-size: 36px; color: white;">
-            <h1>Te amo Katy</h1>
+            <h1>Te amo Katy</h1> <!-- Título em branco -->
         </div>
         <img src="https://cdn.vectorstock.com/i/500p/42/41/drooling-emoticon-vector-794241.jpg" alt="Imagem" id="image" style="margin-left: -230px;" />
     </div>
     
-            
-        
-    </div>
-    
     <script src="script.js"></script>
-</
+</body>
+</html>
